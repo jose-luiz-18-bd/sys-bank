@@ -1,35 +1,40 @@
-# 💰 Sistema Bancário em Python
+# 🏦 Sistema Bancário em Python (Terminal)
 
-Este é um projeto simples de terminal desenvolvido em Python que simula operações bancárias como **depósito**, **saque** e **emissão de extrato**.
+Este é um projeto de simulação de um sistema bancário simples utilizando **Python orientado a objetos**, com suporte a múltiplos clientes, contas e transações.
 
-## 🚀 Funcionalidades
+## 📚 Funcionalidades
 
-- 📥 **Depósito**: Permite depositar valores positivos no saldo da conta.
-- 💸 **Saque**:
-  - Limite de **R$ 500,00** por saque.
-  - Máximo de **3 saques por dia**.
-  - Verificação de saldo disponível.
-- 📄 **Extrato**: Mostra todas as movimentações e o saldo atual.
-- ❌ **Saída**: Encerra o programa.
+- ✅ Criar cliente (Pessoa Física)
+- ✅ Criar conta corrente para o cliente
+- ✅ Realizar depósitos e saques
+- ✅ Limitar número de saques por conta
+- ✅ Gerar extrato de movimentações
+- ✅ Listar todas as contas registradas
+- ✅ Histórico de transações por conta
+- ✅ Interface simples por terminal
 
-## ⚙️ Como funciona
+## 🧠 Conceitos aplicados
 
-O sistema exibe um menu interativo no terminal com as seguintes opções:
+- Programação Orientada a Objetos (POO)
+- Herança e Polimorfismo
+- Métodos e classes abstratas (`ABC`)
+- Iteradores personalizados (`__iter__`/`__next__`)
+- Uso de decoradores (`@log_transacao`)
+- Separação de responsabilidades
+- Boas práticas de encapsulamento
 
-O usuário escolhe a operação digitando o número correspondente. O sistema executa a ação e exibe mensagens de sucesso ou erro conforme necessário.
+## 🛠️ Requisitos
 
-## 🧠 Regras de negócio
+- Python 3.10 ou superior (recomendado)
+- Nenhuma dependência externa (puro Python)
 
-- Apenas valores **positivos** são aceitos para depósito e saque.
-- O valor máximo por saque é **R$ 500,00**.
-- O número máximo de saques por execução é **3**.
-- O extrato mostra os depósitos e saques realizados ou informa que nenhuma movimentação foi feita.
+## 🚀 Como executar
 
-## 🛠️ Como executar
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/jose-luiz-18-bd/sys-bank.git
+   cd sys-bank
 
-1. Tenha o **Python 3** instalado na sua máquina.
-2. Salve o código em um arquivo, por exemplo: `sys_bank.py`
-3. No terminal, navegue até o diretório do arquivo e execute:
 
 ```bash
 python sys_bank.py
